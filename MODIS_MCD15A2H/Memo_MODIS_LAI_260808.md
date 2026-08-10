@@ -3,6 +3,7 @@ MODIS LAI - MCD15A2H 에 대한 메모
 
 # 기본 정보
 - 한 파일 = 8일 컴포짓 하나 (8일 대표값)
+![one file for 8 days composite](assets/own_composite.png)
 - 전지구, $0.05^{\circ} \times 0.05^{\circ}$, 3,200 $\times$ 7,200 grids
 - 식생군(biome) 축 포함
 
@@ -11,18 +12,18 @@ MODIS LAI - MCD15A2H 에 대한 메모
 - `lai_main_land`
 	- 주 복사전달(Radiative Transfer, RT) 알고리즘 (SCF_QC = 0, 1) & LandSea = 육지
 - `lai_main_nonland`
-  : 주 복사전달 알고리즘 & 비육지(해안/내수/해양)
-  : 혼합화소라 물 비율만큼 LAI 가 희석되어 육지보다 LAI 값이 낮은 편
+	- 주 복사전달 알고리즘 & 비육지(해안/내수/해양)
+	- 혼합화소라 물 비율만큼 LAI 가 희석되어 육지보다 LAI 값이 낮은 편
 - `lai_backup`
-  : 백업 경험적 NDVI 알고리즘 (SCF_QC = 2, 3)
+	- 백업 경험적 NDVI 알고리즘 (SCF_QC = 2, 3)
 - `lai_main_land_biome`
-  : lai_main_land 의 biome 별 분리판
+	- lai_main_land 의 biome 별 분리판
 - `lai_main_nonland_biome`
-  : lai_main_nonland 의 biome 별 분리판
+	- lai_main_nonland 의 biome 별 분리판
 - `lai_backup_biome`
-  : lai_backup 의 biome 별 분리판
+	- lai_backup 의 biome 별 분리판
 
-여섯 변수 모두 `int16, scale_factor=0.001, add_offset=0.0, _Fillvalue=-32768` 이 적용되어 있음
+**여섯 변수 모두 `int16, scale_factor=0.001, add_offset=0.0, _Fillvalue=-32768` 이 적용되어 있음**
 
 # LAI 외 변수
 각 LAI 변수마다 3개씩 짝이 되는 화소 개수 관련 변수가 있음
