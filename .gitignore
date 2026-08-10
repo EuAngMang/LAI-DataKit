@@ -1,0 +1,32 @@
+# Obsidian - 기기별 상태 파일
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.trash/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# 데이터 파일 - 원자료는 올리지 않음
+*.nc
+*.hdf
+*.h5
+*.tif
+*.tiff
+*.csv
+*.npy
+*.npz
+
+# 대용량 압축 파일
+*.zip
+*.tar
+*.tar.gz
