@@ -8,7 +8,7 @@ MODIS LAI - MCD15A2H 에 대한 메모
 
 # LAI 변수
 총 6개로 구성되어 있음
-- `lai_main_land`
+- `lai_main_land`  
   : 주 복사전달(Radiative Transfer, RT) 알고리즘 (SCF_QC = 0, 1) & LandSea = 육지
 - `lai_main_nonland`
   : 주 복사전달 알고리즘 & 비육지(해안/내수/해양)
